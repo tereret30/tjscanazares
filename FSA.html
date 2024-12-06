@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial, Sum, and Average Calculator</title>
+    <link rel="stylesheet" href="FSA.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="addu.png" alt="Logo"></a>
+        <div class="subject">
+            <h1>Introduction to Computing</h1>
+            <h2>4-301</h2>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./converter.html">Unit Converter</a></li>
+                <li><a href="./incometax.html">Income Tax Calculator</a></li>
+                <li><a href="./FSA.html">Factorial, Sum, & Average</a></li>
+                <li><a href="./payroll.html">Payroll System</a></li>
+            </ul>
+        </div>
+        <div class="hamburger" onclick="toggleNavbar()">
+            ☰
+        </div>
+    </nav>
+
+    <main>
+        <div class="fsa">
+            <h2>Factorial, Sum, and Average Calculator</h2>
+            <label for="numberInput">Natural Number:</label>
+            <input type="number" id="numberInput" min="1" placeholder="Enter value">
+            <br>
+            <h3>Results:</h3>
+            <p id="factorialResult">The factorial is: </p>
+            <p id="sumResult">The sum is: </p>
+            <p id="averageResult">The average is: </p>
+            <button id="calculate">Calculate</button>
+            <button id="clearvalues">Clear Values</button>
+
+            </div>
+    </main>
+    <script src="FSA.js"></script>
+    <script>
+        function toggleNavbar() {
+            const navbar = document.querySelector('.navbar ul');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
